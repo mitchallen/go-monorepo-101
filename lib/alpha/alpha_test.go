@@ -1,6 +1,6 @@
 /**
  * Author: Mitch Allen
- * File: alphtest.go
+ * File: alpha_test.go
  */
 
 package alpha
