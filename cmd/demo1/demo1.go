@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"lib/alpha"
-
 	"github.com/mitchallen/coin"
+	"github.com/mitchallen/go-monorepo-101/lib/alpha"
+	"github.com/mitchallen/go-monorepo-101/lib/beta"
 )
 
 func DemoFlip() {
@@ -29,6 +29,10 @@ func DemoFlip() {
 	total := alpha.Add(m[true], m[false])
 
 	fmt.Printf("Total: %d \n", total)
+
+	// use beta
+	b1 := beta.Multiply(m[true], m[false])
+	fmt.Printf("b1: %d \n", b1)
 }
 
 func main() {
