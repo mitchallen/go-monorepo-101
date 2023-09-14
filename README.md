@@ -23,7 +23,7 @@ go list -f '{{.Dir}}' -m | xargs -L1 go test -C
 
 ## Requirements
 
-To use workspace featurers, this project requires:
+To use workspace features, this project requires:
 * go 18.x or higher
 
 ## Steps
