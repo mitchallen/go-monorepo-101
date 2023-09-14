@@ -126,7 +126,7 @@ go list -f '{{.Dir}}' -m | xargs -L1 go test -C
 * Use VSCode to create a .gitignore file
 * Note that it ignores go.work
 
-### Step 6. Create an app module
+## Step 6. Create an app module
 
 ```sh
 mkdir -p ./cmd/demo1
@@ -163,7 +163,7 @@ demo1.go:7:2: no required module provides package github.com/mitchallen/coin; to
         go get github.com/mitchallen/coin
 ```
 
-* Add the module with this commamd (note the dot (.) to indicate the current directory)
+* Add the module with this command (note the dot (.) to indicate the current directory)
 
 ```sh
 go work use -r .
