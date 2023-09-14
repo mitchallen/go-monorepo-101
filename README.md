@@ -1,6 +1,11 @@
 go-monorepo-101
 ==
 
+Follow along as I workout the mechanics for my next article on:
+* https://scriptable.com/
+
+When the article is finished, I'll post a link in this README.
+
 ## Usage
 
 * Clone and then:
