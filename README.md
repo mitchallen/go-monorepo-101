@@ -3,6 +3,18 @@ go-monorepo-101
 
 ## Usage
 
+* Clone and then:
+
+```sh
+go work use -r .
+go list -f '{{.Dir}}' -m | xargs -L1 go mod tidy -C
+go list -f '{{.Dir}}' -m | xargs -L1 go work sync -C
+go list -f '{{.Dir}}' -m | xargs -L1 go test -C
+```
+
+
+* * *
+
 ## Requirements
 
 To use workspace featurers, this project requires:
@@ -95,6 +107,56 @@ go list -f '{{.Dir}}' -m | xargs -L1 go test -C
 
 * Use VSCode to create a .gitignore file
 * Note that it ignores go.work
+
+### Step 6. Create an app module
+
+```sh
+mkdir -p ./cmd/demo1
+cd ./cmd/demo1
+```
+
+* Subsititute my github path for your
+
+```sh
+go mod init github.com/mitchallen/demo1
+```
+
+```sh
+touch demo1.go
+```
+
+* Use an external dependency
+
+```sh
+go get github.com/mitchallen/coin
+```
+
+* Add the code for demo1.go
+
+* Go back to the root of the project
+
+```sh
+cd ../..
+```
+
+* Add the module with this commamd (note the dot (.) to indicate the current directory)
+
+```sh
+go work use -r .
+```
+
+* View the go.work file again:
+
+```sh
+cat go.work
+```
+
+* Run the demo
+
+```sh
+go run ./cmd/demo1/demo1.go
+```
+
 
 * * *
 
