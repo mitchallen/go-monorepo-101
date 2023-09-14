@@ -3,8 +3,9 @@ package main
 import (
 	"fmt"
 
+	"lib/alpha"
+
 	"github.com/mitchallen/coin"
-	"github.com/mitchallen/go-monorepo-101/lib/alpha"
 )
 
 func DemoFlip() {
