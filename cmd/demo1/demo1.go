@@ -23,6 +23,8 @@ func DemoFlip() {
 	fmt.Print("[Flip]: ")
 	fmt.Println(m)
 
+	// Use alpha too:
+
 	total := alpha.Add(m[true], m[false])
 
 	fmt.Printf("Total: %d \n", total)
