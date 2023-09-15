@@ -56,7 +56,7 @@ cat go.work
 ```sh
 mkdir -p ./lib/alpha
 cd ./lib/alpha
-go mod init alpha
+go mod init github.com/mitchallen/go-monorepo-101/lib/alpha
 touch alpha.go
 touch alpha_test.go
 ```

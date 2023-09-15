@@ -1,2 +1,6 @@
 github.com/mitchallen/coin v0.3.0 h1:bSUsrbVzV5Q0COgAhLNm+SD0dE9c/+TrOb4LdGGFCOY=
 github.com/mitchallen/coin v0.3.0/go.mod h1:gfy4ktrYLH5aUu5k8tciaK8zeclmC/3lic9WN8F2cIA=
+github.com/mitchallen/go-monorepo-101/lib/alpha v0.0.0-20230914210050-bb56e6a93a44 h1:E8U2Av/jilAqUVjhDiOF3ccTrQq7ybkd8RTEnrrVtwM=
+github.com/mitchallen/go-monorepo-101/lib/alpha v0.0.0-20230914210050-bb56e6a93a44/go.mod h1:AdZR+6jQ9G9kMOkdSotg6mRK9UsTnSs9h6M7TK8oMdg=
+github.com/mitchallen/go-monorepo-101/lib/beta v0.0.0-20230914210050-bb56e6a93a44 h1:6QuUfx+J5KTnORzh+RMAtVZLaHXQEH6kIEXRr6o+JE0=
+github.com/mitchallen/go-monorepo-101/lib/beta v0.0.0-20230914210050-bb56e6a93a44/go.mod h1:aqOypf//qW5c/Mku4/UXOx1sy48EJ9miiF/epYz5kPU=
