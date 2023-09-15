@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/mitchallen/coin"
-	"github.com/mitchallen/go-monorepo-101/lib/alpha"
-	"github.com/mitchallen/go-monorepo-101/lib/beta"
+	"github.com/mitchallen/go-monorepo-101/pkg/alpha"
+	"github.com/mitchallen/go-monorepo-101/pkg/beta"
 )
 
 func DemoFlip() {

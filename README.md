@@ -51,12 +51,12 @@ go work init
 cat go.work
 ```
 
-### Step 3. Create a library
+### Step 3. Create a Package
 
 ```sh
-mkdir -p ./lib/alpha
-cd ./lib/alpha
-go mod init github.com/mitchallen/go-monorepo-101/lib/alpha
+mkdir -p ./pkg/alpha
+cd ./pkg/alpha
+go mod init github.com/mitchallen/go-monorepo-101/pkg/alpha
 touch alpha.go
 touch alpha_test.go
 ```
@@ -87,7 +87,7 @@ cat ../../go.work
 ```sh
 go 1.21.0
 
-use ./lib/alpha
+use ./pkg/alpha
 ```
 
 * Try running the tests again (should pass with no issues):
@@ -97,7 +97,7 @@ go test
 
 ## Step 4. Run tests from root
 
-* If you are still in lib/alpha, back up to the root:
+* If you are still in pkg/alpha, back up to the root:
 
 ```sh
 cd ../..
@@ -182,7 +182,7 @@ go 1.21.0
 
 use (
         ./cmd/demo1
-        ./lib/alpha
+        ./pkg/alpha
 )
 ```
 
