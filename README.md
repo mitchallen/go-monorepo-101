@@ -26,6 +26,12 @@ go list -f '{{.Dir}}' -m | xargs -L1 go test -C
 To use workspace features, this project requires:
 * go 18.x or higher
 
+To use the -C flag, the commands require:
+* go 20.x or higher
+
+This project includes a Dev Container mapped to:
+* go 21.x or higher
+
 ## Steps
 
 ### Step 1. Create project folder
