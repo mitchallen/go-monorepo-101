@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/mitchallen/coin"
+	"github.com/mitchallen/go-monorepo-101/internal/secrets"
 	"github.com/mitchallen/go-monorepo-101/pkg/alpha"
 	"github.com/mitchallen/go-monorepo-101/pkg/beta"
 )
@@ -33,6 +34,9 @@ func DemoFlip() {
 	// use beta
 	b1 := beta.Multiply(m[true], m[false])
 	fmt.Printf("b1: %d \n", b1)
+
+	s1 := secrets.GetSecret()
+	fmt.Println(s1)
 }
 
 func main() {
