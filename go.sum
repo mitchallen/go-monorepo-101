@@ -1,5 +1,7 @@
 github.com/mitchallen/coin v0.3.0 h1:bSUsrbVzV5Q0COgAhLNm+SD0dE9c/+TrOb4LdGGFCOY=
 github.com/mitchallen/coin v0.3.0/go.mod h1:gfy4ktrYLH5aUu5k8tciaK8zeclmC/3lic9WN8F2cIA=
+github.com/mitchallen/go-monorepo-101/internal/secrets v0.0.0-20230916100810-11f62bcd9567 h1:rnaYiqMn/z3PCzdWO3v9fAUIKUu8+msZRwo4fu/x0g8=
+github.com/mitchallen/go-monorepo-101/internal/secrets v0.0.0-20230916100810-11f62bcd9567/go.mod h1:QNiOLjGQoRrmefvWXWZU86jTY0Dochb6wRWzRrlM4RE=
 github.com/mitchallen/go-monorepo-101/pkg/alpha v0.0.0-20230915204359-b3f89feafd4c h1:Phbbm654mts8hW8Dlf7HgR4lGXufCRQuHlTw/L5mufw=
 github.com/mitchallen/go-monorepo-101/pkg/alpha v0.0.0-20230915204359-b3f89feafd4c/go.mod h1:Dr3CQWZdblM+/0dl+nzFEI1yRK1GfZjEIlShh0sHr9M=
 github.com/mitchallen/go-monorepo-101/pkg/beta v0.0.0-20230915204359-b3f89feafd4c h1:Xpf+tpz+0qURQugj/Qle3qxEzJUVON+FhRIZfIirUvc=
