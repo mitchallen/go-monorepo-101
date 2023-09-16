@@ -55,10 +55,9 @@ cat go.work
 
 ```sh
 mkdir -p ./pkg/alpha
-cd ./pkg/alpha
-go mod init github.com/mitchallen/go-monorepo-101/pkg/alpha
-touch alpha.go
-touch alpha_test.go
+go mod init  -C ./pkg/alpha github.com/mitchallen/go-monorepo-101/pkg/alpha
+touch ./pkg/alpha/alpha.go
+touch ./pkg/alpha/alpha_test.go
 ```
 
 * Copy code to alpha.go and alpha_test.go and save them
@@ -66,7 +65,7 @@ touch alpha_test.go
 * Test alpha from within it's directory:
 
 ```sh
-go test
+go test -C ./pkg/alpha
 ```
 
 * NOTE: Get this error:
@@ -81,7 +80,7 @@ go work use -r .
 
 * Check the go.work file again in the root of the project:
 ```sh
-cat ../../go.work 
+cat go.work 
 ```
 * Note that alpha is now referenced:
 ```sh
@@ -92,16 +91,12 @@ use ./pkg/alpha
 
 * Try running the tests again (should pass with no issues):
 ```sh
-go test
+go test -C ./pkg/alpha
 ```
 
 ## Step 4. Run tests from root
 
-* If you are still in pkg/alpha, back up to the root:
-
-```sh
-cd ../..
-```
+* From the root of the project:
 
 * First tidy up:
 
@@ -130,23 +125,22 @@ go list -f '{{.Dir}}' -m | xargs -L1 go test -C
 
 ```sh
 mkdir -p ./cmd/demo1
-cd ./cmd/demo1
 ```
 
 * Subsititute my github path for yours:
 
 ```sh
-go mod init github.com/mitchallen/demo1
+go mod init -C ./cmd/demo1 github.com/mitchallen/demo1
 ```
 
 ```sh
-touch demo1.go
+touch ./cmd/demo1/demo1.go
 ```
 
 * Use an external dependency
 
 ```sh
-go get github.com/mitchallen/coin
+go get -C ./cmd/demo1 github.com/mitchallen/coin
 ```
 
 * Add the code for demo1.go
@@ -154,7 +148,7 @@ go get github.com/mitchallen/coin
 * Try to run the app:
 
 ```sh
-go run demo1.go
+go run ./cmd/demo1/demo1.go
 ```
 
 * NOTE that you get this error:
@@ -169,10 +163,10 @@ demo1.go:7:2: no required module provides package github.com/mitchallen/coin; to
 go work use -r .
 ```
 
-* View the go.work file again:
+* View the go.work file in the root again:
 
 ```sh
-cat ../../go.work
+cat go.work
 ```
 
 * Note that the module has now been added to go.work:
