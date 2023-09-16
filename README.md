@@ -183,13 +183,6 @@ use (
 * Run the demo again:
 
 ```sh
-go run demo1.go
-```
-
-* Run the demo again from the root:
-
-```sh
-cd ../..
 go run ./cmd/demo1/demo1.go
 ```
 
